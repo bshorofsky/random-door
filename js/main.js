@@ -1,3 +1,21 @@
+//Smooth Scroll
+
+$('nav a').on('click', function() {
+  // use the href of the link to identify what
+  // section to scroll to
+  var thisTarget = $(this).attr('href');
+  // get that section's top offset
+  var targetOffset = $(thisTarget).offset().top;
+  // use jQuery.animate() to animate the body's
+  // scrollTop to the targetOffest
+  $('body').animate({
+    scrollTop: targetOffset - 50
+  }, 1200);
+});
+
+
+//Nav properties
+
 var navPosition = $('.container').offset().top;
 var navPosition = navPosition - 60;
 
@@ -29,14 +47,12 @@ $('#prev').on('click', previousImage);
 function nextImage(){
 	currentPosition++;
 
-	$('#prev').prop('disabled', false);
+	$('#prev').css('display', 'inline');
 
 	changeImage();
 
  	if (currentPosition === 3) {
-
-		$('#next').prop('disabled', true);
-
+		$('#next').css('display', 'none');
 	}
 }
 
@@ -44,27 +60,20 @@ function previousImage(){
 
 	currentPosition--;
 
-
-	$('#next').prop('disabled', false);
-
+	$('#next').css('display', 'inline');
 
 	changeImage();
 
-
 	if (currentPosition === 0 ) {
-
-		$('#prev').prop('disabled', true);
+		$('#prev').css('display', 'none');
 	}
 }
 
 function changeImage(){
-
 	$('#carousel-image').attr('src', images[currentPosition]);
 	$('#count-one').css('background-color', 'rgba(255, 255, 255, 0)');
 	$('#count-two').css('background-color', 'rgba(255, 255, 255, 0)');
 	$('#count-three').css('background-color', 'rgba(255, 255, 255, 0)');
 	$('#count-four').css('background-color', 'rgba(255, 255, 255, 0)');
 	$(countDots[currentPosition]).css('background-color', 'rgba(255, 255, 255, .4)');
-
-
 }
