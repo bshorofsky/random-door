@@ -165,7 +165,7 @@ button {
     color: rgba(255, 255, 255, .4);
     text-transform: uppercase;
     border: solid 3px rgba(255, 255, 255, .4);
-    padding: 2%;
+    padding: 1%;
     background-color: rgba(255, 255, 255, 0);
     width: 30%;
     transition: color .2s ease-in;
@@ -518,6 +518,16 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1000px) {    
+    #prev {
+        top: -265px;
+    }
+
+    #next {
+        top: -285px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .store-photos {
         width: 49%;
@@ -529,6 +539,14 @@ footer {
 
     .carousel {
         width: 100%;
+    }
+
+    #prev {
+        top: -210px;
+    }
+
+    #next {
+        top: -230px;
     }
 
     .custom-photos {
@@ -554,12 +572,12 @@ footer {
 @media only screen and (max-width: 650px) {
     /* Style adjustments for viewports that meet the condition */
     .hamburger {
-    display: inline;
-    float: left;
-    margin: 20px 20px;
-    color: #fff;
-    z-index:200;
-    clear: both;
+        display: inline;
+        float: left;
+        margin: 20px 20px;
+        color: #fff;
+        z-index:200;
+        clear: both;
     }
 
     .exit {
@@ -569,7 +587,7 @@ footer {
     }
 
     .menu {
-        height: 800px;
+        height: 100vh;
         overflow: hidden;
         display: block;
         width: 200px;
@@ -620,12 +638,22 @@ footer {
         font-size: 1rem;
     }
 
+    button {
+        width: 50%;
+        margin: 0 25%;
+        font-size: .75rem;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
 
-    #prev, #next {
+    #prev {
         top: -200px;
+    }
+
+    #next {
+        top: -220px;
     }
 
     .store-photos {
@@ -640,8 +668,12 @@ footer {
         width: 100%;
     }
 
-    #prev, #next {
+    #prev {
         top: -150px;
+    }
+
+    #next {
+        top: -170px;
     }
 
 }
