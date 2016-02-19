@@ -599,9 +599,14 @@ footer p , a {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-    .container, .title, .menu {
+    .container {
         margin: 0 auto;
         padding: 0 5%;
+        max-width: 1200px;
+    }
+
+    .title, .menu {
+        margin: 0 auto;
         max-width: 1200px;
     }
 
