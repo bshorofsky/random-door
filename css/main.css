@@ -103,7 +103,7 @@ html {
 
 .container {
     margin: 0 5%;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 0;
 }
 
@@ -117,7 +117,7 @@ h1 {
 h2 {
     font-family: 'Sanchez';
     font-size: 1.75rem;
-    color: rgba(80, 80, 80, 1);
+    color: #B06C46;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -188,7 +188,7 @@ button:hover {
     background-image: url(../img/title-background.jpg);
     background-position: top 20% left;
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: 1800px;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -235,7 +235,18 @@ nav li, nav a {
     transition: font-weight .5s ease-in-out;
     transition: color .5s ease-in-out;
     text-decoration: none;
-    margin-top: 5px;
+    margin-top: 3px;
+    height: 45px;
+}
+
+.menu li {
+    position: relative;
+    top: -1rem;
+}
+    
+
+#logo {
+    margin-top: 1rem;
 }
 
 .menu li:first-child {
@@ -249,8 +260,9 @@ nav a:hover {
 }
 
 .scrolled {
-    background-color: rgba(80, 80, 80, .95);
+    background-color: rgba(176, 108, 70, .95);
     transition: background-color .3s ease-in-out;
+    height: 50px;
 }
 
 .hamburger {
@@ -442,7 +454,7 @@ img {
     font-weight: 300;
 }
 
-.col-1 {
+.formInputs {
     width: 50%;
     position: relative;
     float: left;
@@ -497,6 +509,10 @@ footer {
     padding: 1rem 5%;
     font-weight: 300;
     font-size: 1rem;
+}
+
+footer p , a {
+    color: rgba(225, 225, 225, .4);
 }
 
 
@@ -585,6 +601,7 @@ footer {
 @media only screen and (min-width: 1200px) {
     .container, .title, .menu {
         margin: 0 auto;
+        padding: 0 5%;
         max-width: 1200px;
     }
 
@@ -690,6 +707,10 @@ footer {
         margin: 0;
     }
 
+    #logo {
+        display: none;
+    }
+
    .menu li:first-child {
         height: 50px;
         padding-top: 10px;
@@ -737,6 +758,15 @@ footer {
 
     .store-photos {
         width: 100%;
+    }
+
+    .formInputs, #emailMessage {
+        width: 100%;
+    }
+
+    #submitButton {
+        margin: 1rem auto;
+        width: 105%;
     }
         
 }

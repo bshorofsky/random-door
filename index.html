@@ -31,7 +31,7 @@
             <div class="menu">
                 <ul>     
                     <li><i class="fa fa-close hamburger exit"></i></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><img src="img/door.svg" alt="random door logo" id="logo"></a></li>
                     <li><a href="#store">Store</a></li>
                     <li><a href="#custom">Custom</a></li>
                     <li><a href="#about">About</a></li>
@@ -46,7 +46,7 @@
                 <div class="title">
                     <h4>a workshop using reclaimed materials</h4>
                 </div>
-                <button>Visit the Store</button>
+                <a href="https://www.etsy.com/shop/RandomDoor"><button>Visit the Store</button></a>
             </div>
 
             
@@ -66,6 +66,7 @@
                         <div id="next"><i class="fa fa-chevron-right"></i></div>
                     </div>
                 </div>
+                
                 <div class="section">
                     <div class="section-header" id="store" >
                         <hr>
@@ -74,7 +75,7 @@
                     </div>
                     <div class="section-content">
                         <p>Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                        <button id="store-button">Etsy Store</button>
+                        <a href="https://www.etsy.com/shop/RandomDoor"><button id="store-button">Etsy Store</button></a>
                             <div class="store-photos" id="tables">
                                 <a href="https://www.etsy.com/shop/RandomDoor"><img src="img/furniture_thumbnail.jpg" alt="tables">
                                 <p><span class="store-text">Furniture</span></p></a>
@@ -94,7 +95,8 @@
                         
                     </div>
                 </div>
-                <div class="section">
+                
+                <!-- <div class="section">
                     <div class="section-header" id="custom">
                         <hr>
                         <br>
@@ -106,52 +108,28 @@
                             <img src="img/custom-design-artwork-01.png" alt="tables">
                             <div class="custom-text">
                                 <p>Specify type & dimensions</p>
-                                <!-- <ul>
-                                    <li>Dining tables</li>
-                                    <li>Desks</li>
-                                    <li>Coffee tables</li>
-                                    <li>And more</li>
-                                </ul> -->
                             </div>
                         </div>
                         <div class="custom-photos" id="wood">
                             <img src="img/custom-design-artwork-02.png" alt="cutting boards">
                             <div class="custom-text">
-                            <p>Specify wood type</p>
-                                <!-- <ul>
-                                    <li>type 1</li>
-                                    <li>type 2</li>
-                                    <li>type 3</li>
-                                    <li>type 4</li>
-                                </ul> -->
+                                <p>Specify wood type</p>
                             </div>
                         </div>
                         <div class="custom-photos" id="legs">
                             <img src="img/custom-design-artwork-03.png" alt="coasters">
                             <div class="custom-text">
                                 <p>Specify leg type</p>
-                                <!-- <ul>
-                                    <li>type 1</li>
-                                    <li>type 2</li>
-                                    <li>type 3</li>
-                                    <li>type 4</li>
-                                </ul> -->
                             </div>
                         </div>
                         <div class="custom-photos" id="stain">
                             <img src="img/custom-design-artwork-04.png" alt="wood butter jar"> 
                             <div class="custom-text">
                                 <p>Specify stain</p>
-                                <!-- <ul>
-                                    <li>stain 1</li>
-                                    <li>stain 2</li>
-                                    <li>stain 3</li>
-                                    <li>stain 4</li>
-                                </ul> -->
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="section">
                     <div class="section-header" id="about">
@@ -168,7 +146,7 @@
             <div class="contact" id="contact">
                 <h2>Contact</h2>
                 <form action="//formspree.io/ben@randomdoorworkshop.com" method="POST">
-                    <div class="col-1">
+                    <div class="formInputs">
                         <input type="text" name="name" id="yourName" placeholder="Name">
                         <input type="email" name="email" id="yourEmail" placeholder="Email address">
                         <input type="text" name="subject" id="emailSubject" placeholder="Subject">
@@ -180,7 +158,8 @@
             </div>
         </div>
         <footer>
-            &copy; 2016 
+            <p>Copyright &copy; 2016 Random Door Workshop</p>
+            <p>Site designed and developed by <a href="http://colleenmcginnis.com" target="_blank">Colleen McGinnis</a>.</p>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
