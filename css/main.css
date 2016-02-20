@@ -792,6 +792,11 @@ footer p , a {
         margin: 0;
     }
 
+    nav ul {
+        width: 100%;
+        margin: 0;
+    }
+
     #logo {
         display: none;
     }
