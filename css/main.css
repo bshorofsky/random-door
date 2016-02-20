@@ -200,8 +200,8 @@ button:hover {
 }
 
 .header {
-    background-image: url(../img/title-background.jpg);
-    background-position: top 20% left;
+    background-image: url(../img/wood-floor.jpg);
+    background-position: top 20% center;
     background-repeat: no-repeat;
     background-size: 1800px;
     height: 100vh;
@@ -211,7 +211,7 @@ button:hover {
 }
 
 .title {
-    background-image: url(../img/title-only-2.png);
+    background-image: url(../img/title-only-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size:100%;
