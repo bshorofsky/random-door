@@ -748,6 +748,10 @@ footer p , a {
         width: 100%;
     }
 
+    .header {
+        height: 650px;
+    }
+
     .hamburger {
         display: inline;
         float: left;
@@ -872,6 +876,10 @@ footer p , a {
 }
 
 @media only screen and (max-width: 450px) {
+
+    .header {
+        height: 550px;
+    }
 
     .title {
         top: 0px;
