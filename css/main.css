@@ -740,7 +740,7 @@ footer p , a {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 667px) {
     /* Style adjustments for viewports that meet the condition */
     
     body {
