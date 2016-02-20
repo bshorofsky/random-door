@@ -182,6 +182,8 @@ button:hover {
 .page {
     transform: translate(0px, 0px);
     transition: transform .3s linear;
+    width:100%;
+    overflow: hidden;
 }
 
 .header {
@@ -220,15 +222,14 @@ nav {
 nav ul {
     margin: 0;
     padding: 0;
-    width: 100%;
-    margin: 0 10%;
+    width: 80%;
+    margin: 0 23%;
 }
 
 nav li, nav a {
     width: 19%;
     display: inline-block;
     text-transform: uppercase;
-    text-align: center;
     color: rgba(255, 255, 255, .8);
     font-weight: 300;
     font-size: .75rem;
@@ -242,11 +243,25 @@ nav li, nav a {
 .menu li {
     position: relative;
     top: -1rem;
+    display: inline;
 }
     
+#title {
+    margin-top: 1rem;
+    display: inline;
+    float: left;
+    position: relative;
+    width: 43%;
+    top: 2px;
+    display: none;
+}
 
 #logo {
     margin-top: 1rem;
+    display: inline;
+    float: left;
+    position: relative;
+    width: 20%;
 }
 
 .menu li:first-child {
@@ -342,7 +357,7 @@ hr {
 }
 
 .count-dot {
-    border: solid 1px rgba(255, 255, 255, .4);
+    border: solid 2px rgba(255, 255, 255, .3);
     display: inline;
     height: 2px;
     width: 20px;
@@ -676,6 +691,12 @@ footer p , a {
 
 @media only screen and (max-width: 650px) {
     /* Style adjustments for viewports that meet the condition */
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .hamburger {
         display: inline;
         float: left;
@@ -701,7 +722,7 @@ footer p , a {
         transition: transform .3s linear;
         z-index: 100;
         margin: 0;
-        padding: 20px 0 0 20px;
+        padding: 2rem 0 0 1rem;
 
     }
 

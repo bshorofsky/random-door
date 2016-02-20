@@ -22,10 +22,12 @@ var navPosition = navPosition - 60;
 $(window).on('scroll', function(){
 	if ($(this).scrollTop() >= navPosition) {
 		$('nav').addClass('scrolled');
+		$('#title').show();
 		$('.menu').removeClass('openMenu');
 		$('.page').removeClass('shiftRight');
 	} else {
 		$('nav').removeClass('scrolled');
+		$('#title').hide();
 	}
 });
 
