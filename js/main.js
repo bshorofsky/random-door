@@ -37,7 +37,7 @@ $('.hamburger').on('click', function(){
 
 //Carousel
 
-var images=['img/desk_carousel.jpg', 'img/table_carousel.jpg', 'img/coffee_carousel.jpg', 'img/board_carousel.jpg'];
+var images=['img/desk_carousel.jpg', 'img/table_carousel.jpg', 'img/coffee_carousel.jpg', 'img/tableTwo_carousel.jpg'];
 var countDots=['#count-one', '#count-two', '#count-three', '#count-four']
 var currentPosition = 0;
 

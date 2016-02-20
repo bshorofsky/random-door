@@ -210,7 +210,6 @@ button:hover {
 
 nav {
     height: 40px;
-    margin: 0;
     padding: 10px 0 ;
     position: fixed;
     top: 0;
@@ -222,6 +221,7 @@ nav ul {
     margin: 0;
     padding: 0;
     width: 100%;
+    margin: 0 10%;
 }
 
 nav li, nav a {
@@ -260,7 +260,7 @@ nav a:hover {
 }
 
 .scrolled {
-    background-color: rgba(176, 108, 70, .95);
+    background-color: rgba(80 , 80, 80, .95);
     transition: background-color .3s ease-in-out;
     height: 50px;
 }
@@ -296,10 +296,9 @@ hr {
 
 .carousel {
     display: block;
-    float: left;
-    width: 62%;
+    margin: 0 auto;
+    width: 80%;
     padding: 4% 2%;
-    margin: 0;
 }
 
 #prev {
@@ -387,7 +386,7 @@ img {
 .store-photos {
     display: block;
     float: left;
-    width: 24%;
+    width: 32%;
     margin: 5px .5%;
     cursor: pointer;
 }
@@ -413,6 +412,14 @@ img {
 
 .store-photos:hover .store-text {
   opacity: 1;
+}
+
+.subtitle p {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: rgba(80, 80, 80, .6);
 }
 
 .custom-photos {
@@ -630,9 +637,6 @@ footer p , a {
 }
 
 @media only screen and (max-width: 800px) {
-    .store-photos {
-        width: 49%;
-    }
 
     .intro-text p {
         width: 100%;
