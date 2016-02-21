@@ -138,7 +138,7 @@ h3 {
 
 h4 {
     font-weight: lighter;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .9);
     position: relative;
     top:85%;
     text-align: center;
@@ -169,9 +169,9 @@ button {
     margin: 0 35%;
     font-family: 'Sanchez';
     text-align: center;
-    color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, .8);
     text-transform: uppercase;
-    border: solid 3px rgba(255, 255, 255, .4);
+    border: solid 3px rgba(255, 255, 255, .8);
     padding: 1%;
     background-color: rgba(255, 255, 255, 0);
     width: 30%;
@@ -185,7 +185,7 @@ button {
 
 button:hover {
     color: rgba(255, 255, 255, .8);
-    border: solid 3px rgba(255, 255, 255, .8);
+    border: solid 3px rgba(255, 255, 255, .95);
     background-color: rgba(255, 255, 255, .2);
 }
 
