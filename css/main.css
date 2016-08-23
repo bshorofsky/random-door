@@ -976,6 +976,13 @@ footer p , a {
         width: 100%;
     }
 
+    .etsyImg {
+        width: 320px;
+        background-position: center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
     .formInputs, #emailMessage {
         width: 100%;
     }
