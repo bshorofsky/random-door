@@ -1023,16 +1023,8 @@ footer p , a {
         font-size: 1.5rem;
     }
 
-    #prev {
-        top: -200px;
-    }
-
-    #next {
-        top: -220px;
-    }
-
-    .store-photos {
-        width: 100%;
+    .project {
+        width:  50%;
     }
 
     .etsyImg {
@@ -1072,21 +1064,17 @@ footer p , a {
         width: 100%;
     }
 
-    #prev {
-        top: -150px;
-    }
-
-    #next {
-        top: -170px;
+    .project {
+        width:  100%;
     }
 
 }
 
-@media print,
+/* @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+       (min-resolution: 120dpi) { */
     /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
