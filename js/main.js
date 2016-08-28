@@ -25,6 +25,7 @@ $('.fa-chevron-down').on('click', function() {
 
 
 //Nav properties
+
 var navPosition = $('.container').offset().top;
 var navPosition = navPosition - 60;
 
@@ -42,10 +43,14 @@ $(window).on('scroll', function(){
 	}
 });
 
-$('.hamburger').on('click', function(){
+$('#nav-icon4').on('click', function(){
 	$('.menu').toggleClass('openMenu');
 	$('.page').toggleClass('shiftRight');
+	$(this).toggleClass('open');
 });
+$('nav a').click(function(){
+	$('#nav-icon4').removeClass('open');
+});	
 
 
 // Gallery
@@ -73,13 +78,22 @@ window.onload = function(){
 	  	availability.className = 'project-availability';
 	  	// Keep square proportions for any screen size
 	  	var projects = document.getElementsByClassName('project');
-	  	window.onresize = function resizeit() { 		
-	  		var width = project.offsetWidth;
-	  		for (i=0; i < projects.length; i++){
-		  		projects[i].style.height = width+'px';
-		  	}
-		  	caption.width = width + 'px';
+	  	console.log(window.innerWidth);
+	  	if (window.innerWidth > 667) {
+	  		var initialWidth = gallery.offsetWidth*0.3333;
+	  	} else if (window.innerWidth > 450) {
+	  		var initialWidth = gallery.offsetWidth*0.5;
+	  	} else {
+	  		var initialWidth = gallery.offsetWidth;
 	  	}
+	  	project.style.height = initialWidth + 'px';
+	  	window.onresize = function resizeit() { 		
+	  		var newWidth = project.offsetWidth;
+	  		for (i=0; i < projects.length; i++){
+		  		projects[i].style.height = newWidth+'px';
+		  	}
+	  	}
+	  	// Show and hide captions
 		project.addEventListener('mouseover', function(){
 			var currentProject = document.getElementById(this.id);
 			var currentCaption = currentProject.querySelector('.caption');

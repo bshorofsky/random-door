@@ -27,7 +27,7 @@ var galleryList = {
   		},
   		{
   		"caption": "Wood Butter",
-  		"price": "$20-25",
+  		"price": "$10",
   		"status": "<a href='https://www.etsy.com/shop/RandomDoor'>available now on Etsy</a>",
 		"src": "img/wood-butter.jpg",
   		},

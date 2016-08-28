@@ -146,7 +146,6 @@ h3 {
     position: relative;
     top: 68vh;
     text-align: center;
-    font-size: 20px;
     font-size: 1rem;
     margin: 0;
 }
@@ -341,15 +340,91 @@ nav a:hover {
     height: 50px;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 40px;
-  font-size: 2rem;
-} 
 
-.hidden { 
-    display: none;
+#nav-icon4 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 500;
+  display: none;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: fixed;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
 }
 
 .mobile-title {
@@ -377,6 +452,7 @@ hr {
     width: 100%;
     padding:  0;
     margin: 0;
+    background-color: #B06C46;
 }
 
 .project {
@@ -422,6 +498,10 @@ hr {
     float:  left;
 }
 
+.project-title {
+    max-width: 150px;
+}
+
 .project-cost {
     color: #fff;
     position:  relative;
@@ -437,7 +517,7 @@ hr {
     clear:  both;
     font-size: 12px;
     font-weight: 300;
-    padding:  0 0 0 10px;
+    padding:  0 0 10px 10px;
     margin:  0;
 }
 
@@ -450,71 +530,6 @@ hr {
     color:  rgba(255, 255, 255, .4);
     text-decoration: none;
 }
-
-
-/* .carousel {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    padding: 4% 2%;
-}
-
-#prev {
-    position: relative;
-    float: left;
-    height: 20px;
-    width: 10%;
-    z-index: 100;
-    text-align: center;
-    top: -225px;
-    color: rgba(255, 255, 255, .4);
-    font-size: 40px;
-    font-size: 2rem;
-    -webkit-transition: color .2s ease-in;
-            transition: color .2s ease-in;
-}
-
-#next {
-    position: relative;
-    float: right;
-    height: 20px;
-    width: 10%;
-    z-index: 100;
-    text-align: center;
-    top: -245px;
-    color: rgba(255, 255, 255, .4);
-    font-size: 40px;
-    font-size: 2rem;
-    -webkit-transition: color .2s ease-in;
-            transition: color .2s ease-in;
-}
-
-#prev:hover, #next:hover {
-    color: rgba(255, 255, 255, .8);
-}
-
-#counter {
-    position: relative;
-    top: -50px;
-    padding: 2px 20%;
-    margin: 1px 10%;
-    height: 20px;
-    width: 40%;
-    text-align: center;
-}
-
-.count-dot {
-    border: solid 2px rgba(255, 255, 255, .3);
-    display: inline;
-    height: 2px;
-    width: 20px;
-    padding: 0 12px;
-    margin: 10px 5px;
-}
-
-#count-one {
-    background-color: rgba(255, 255, 255, .2);
-} */
 
 img {
     display: block;
@@ -576,56 +591,6 @@ img {
     opacity: .9;
 }
 
-/* #store-button {
-    color: rgba(80, 80, 80, .6);
-    border: solid 3px rgba(80, 80, 80, .6);
-    background-color: rgba(80, 80, 80, 0);
-    margin-bottom: 30px;
-    margin-bottom: 1.5rem;
-    -webkit-transition: color .2s ease-in;
-            transition: color .2s ease-in;
-    -webkit-transition: border .2s ease-in;
-            transition: border .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
-            transition: background-color .2s ease-in;
-}
-
-#store-button:hover {
-    color: rgba(80, 80, 80, .8);
-    border: solid 3px rgba(80, 80, 80, .8);
-    background-color: rgba(80, 80, 80, .1);
-}
-
-.store-photos {
-    display: block;
-    float: left;
-    width: 32%;
-    margin: 5px .5%;
-    cursor: pointer;
-}
-
-
-.store-text {
-    display: block;
-    width: 100%;
-    position: relative;
-    left: -.5%;
-    top: -88px;
-    text-align: center;
-    float: left;
-    margin: 5px .5%;
-    background-color: rgba(0, 0, 0, .4);
-    color: #fff;
-    padding: 20px 0;
-    font-size: 20px;
-    font-size: 1rem;
-    font-weight: 300;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity .2s ease-in-out;
-            transition: opacity .2s ease-in-out;
-} */
-
 .store-photos:hover .store-text {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -669,7 +634,7 @@ img {
     top: 100vh;
     background-color: none;
     max-width: 800px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
 }
 
 .contactForm h2 {
@@ -692,14 +657,11 @@ img {
 
 #yourName, #yourEmail, #emailSubject {
   width: 100%;
-  height: 30px;
   height: 1.5rem;
-  margin-bottom: 20px;
   margin-bottom: 1rem;
   border-radius: 2px;
   border: none;
-  padding: 10px 2%;
-  padding: .5rem 2%;
+  padding: .5rem 0 .5rem 2%;
 }
 
 #emailMessage {
@@ -707,10 +669,10 @@ img {
   height: 168px;
   border-radius: 2px;
   border: none;
-  padding: 2%;
   resize: none;
   outline: none;
   float: left;
+  padding: .5rem 0 .5rem 2%;
 }
 
 #submitButton {
@@ -719,7 +681,7 @@ img {
   border: 3px solid rgba(225, 225, 225, .8);
   background-color: rgba(225, 225, 225, 0);
   color: rgba(225, 225, 225, 1);
-  padding: 3%;
+  padding: .5rem 0 .5rem 2%;
   font-weight: 700;
   font-size: 20px;
   font-size: 1rem;
@@ -737,20 +699,23 @@ img {
 }
 
 footer {
-    margin: 0;
+    margin: 60px 0 0 0;
     color: rgba(225, 225, 225, 1);
-    padding: 20px 5%;
-    padding: 1rem 5%;
+    padding: 0 5%;
     font-weight: 300;
-    font-size: 20px;
     font-size: 1rem;
     z-index: 500;
     position:  relative;
-    bottom:  0;
+    text-align: center;
 }
 
 footer p , a {
     color: rgba(225, 225, 225, 1);
+    margin: 0;
+}
+
+footer a {
+    cursor: pointer;
 }
 
 
@@ -865,10 +830,14 @@ footer p , a {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
 
     #title {
         width: 60%;
+    }
+
+    .title h4 {
+        top:  55vh;
     }
 
     #logo {
@@ -877,33 +846,6 @@ footer p , a {
 
     .intro-text p {
         width: 100%;
-    }
-
-    .carousel {
-        width: 100%;
-    }
-
-    #prev {
-        top: -210px;
-    }
-
-    #next {
-        top: -230px;
-    }
-
-    .custom-photos {
-        width: 100%;
-    }
-
-    .custom-photos img {
-        width: 50%;
-        display: inline;
-    }
-
-    .custom-text {
-        width: 48%;
-        float: left;
-        text-align: left;
     }
 
     h4 {
@@ -918,24 +860,9 @@ footer p , a {
         overflow-x: hidden;
         width: 100%;
     }
-
-    .header {
-        height: 650px;
-    }
-
-    .hamburger {
-        display: inline;
-        float: left;
-        margin: 20px 20px;
-        color: #fff;
-        z-index:200;
-        clear: both;
-    }
-
-    .exit {
-        color: #fff;
-        position: relative;
-        margin: 0;
+    
+    #nav-icon4 {
+        display: block;
     }
 
     .menu {
@@ -943,15 +870,15 @@ footer p , a {
         overflow: hidden;
         display: block;
         width: 200px;
-        background-color: rgba(80, 80, 80, 1);
-        -webkit-transform: translate(-295px, -10px);
-            -ms-transform: translate(-295px, -10px);
-                transform: translate(-295px, -10px);
-        -webkit-transition: -webkit-transform .3s linear;
-                transition: transform .3s linear;
+        background-color: rgba(102, 51, 0, .95);
         z-index: 100;
         margin: 0;
         padding: 2rem 0 0 1rem;
+        position: fixed;
+        top: 0;
+        left: -220px;
+        -webkit-transition: -webkit-transform .3s linear;
+                transition: transform .3s linear;
 
     }
 
@@ -961,8 +888,7 @@ footer p , a {
         text-align: center;
         -webkit-transition: background-color .2s linear;
                 transition: background-color .2s linear;
-        padding: 2px 8px;
-        font-size: 1rem;
+        padding: 2px 0;
         text-align: left;
         margin: 0;
     }
@@ -970,6 +896,11 @@ footer p , a {
     nav ul {
         width: 100%;
         margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 1.25rem;
     }
 
     #logo {
@@ -982,17 +913,17 @@ footer p , a {
     }
 
     .openMenu {
-        -webkit-transform: translate(-75px, -10px);
-            -ms-transform: translate(-75px, -10px);
-                transform: translate(-75px, -10px);
+        -webkit-transform: translate(220px, 0);
+            -ms-transform: translate(220px, 0);
+                transform: translate(220px, 0);
         -webkit-transition: -webkit-transform .3s linear;
                 transition: transform .3s linear;
     }
 
     .shiftRight {
-        -webkit-transform: translate(215px, 0);
-            -ms-transform: translate(215px, 0);
-                transform: translate(215px, 0);
+        -webkit-transform: translate(220px, 0);
+            -ms-transform: translate(220px, 0);
+                transform: translate(220px, 0);
         -webkit-transition: -webkit-transform .3s linear;
                 transition: transform .3s linear;
     }
@@ -1009,8 +940,16 @@ footer p , a {
         font-size: 1rem;
     }
 
+    .header {
+        margin-bottom: -200px;
+    }
+
     .title {
         height: 500px;
+    }
+
+    .title h4 {
+        top: 50vh;
     }
 
     button {
@@ -1036,28 +975,26 @@ footer p , a {
 
     .formInputs, #emailMessage {
         width: 100%;
+        margin-right: 0;
     }
 
     #submitButton {
         margin: 1rem auto;
-        width: 105%;
+        width: 101%;
     }
         
 }
 
 @media only screen and (max-width: 450px) {
 
-    .header {
-        height: 550px;
-    }
-
     .title {
-        top: 0px;
+        top: 100px;
         height: 400px;
     }
 
     .title h4 {
         font-size: .75rem;
+        top:  38vh;
     }
 
     .custom-photos img, .custom-text {
