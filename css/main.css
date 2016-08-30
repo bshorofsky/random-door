@@ -102,7 +102,7 @@ html {
 }
 
 .container {
-    padding: 2rem 5%;
+    padding: 2rem 5% 4rem 5%;
     z-index: 200;
     position: relative;
     top: 100vh;
@@ -143,11 +143,9 @@ h3 {
 .title h4 {
     font-weight: lighter;
     color: rgba(255, 255, 255, .9);
-    position: relative;
-    top: 68vh;
     text-align: center;
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.25rem;
+    margin: 0 15%;
 }
 
 p {
@@ -166,7 +164,7 @@ i {
     margin: 0 auto;
     z-index: 200;
     color: #000;
-    padding:  40px;
+    padding:  60px;
     font-size: 40px;
     color: rgba(255, 255, 255, .6);
     animation: bounce 4s ease-in-out infinite;
@@ -237,7 +235,7 @@ button:hover {
 .header {
     position: fixed;
     background-image: url('../img/wood-floor.jpg');
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -248,16 +246,19 @@ button:hover {
 }
 
 .title {
-    background-image: url('../img/logo_clean.png');
-    background-position: top 20vh center;
+    /* background-image: url('../img/logo_clean.png'); */
+    background-position: top 150px center;
     background-repeat: no-repeat;
     background-size:100%;
+    
+}
+
+.title img {
     width: 70%;
     max-width: 850px;
-    height: 500px;
     position: relative;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0 ;
+    padding: 150px 15% 50px 15%;
 }
 
 nav {
@@ -294,13 +295,19 @@ nav li, nav a {
     cursor: pointer;
     transition: font-weight .1s linear;
 }
-/* 
-.menu li {
-    position: relative;
-    top: -20px;
-    top: -1rem;
-    display: inline;
-} */
+
+nav li .active {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    transition: font-weight .1s linear;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    transition: font-weight .1s linear;
+}
+
     
 #title {
     margin-top: 20px;
@@ -322,16 +329,7 @@ nav li, nav a {
     width: 20%;
 }
 
-.menu li:first-child {
-    height: 0;
-    width: 0;
-}
 
-nav a:hover {
-    color: rgba(255, 255, 255, 1);
-    font-weight: 700;
-    transition: font-weight .1s linear;
-}
 
 .scrolled {
     background-color: rgba(102, 51, 0, .95);
@@ -628,7 +626,7 @@ img {
 
 
 .contactForm {
-    padding: 2rem 5%;
+    padding: 2rem 5% 3rem 5%;
     z-index: 200;
     position: relative;
     top: 100vh;
@@ -804,7 +802,7 @@ footer a {
 @media only screen and (min-width: 1200px) {
     .container {
         margin: 0 auto;
-        padding: 0 5%;
+        padding: 0 5% 3rem 5%;
         max-width: 1000px;
         clear:  both;
     }
@@ -896,11 +894,15 @@ footer a {
     nav ul {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 50px 0 0 0;
     }
 
     nav a {
         font-size: 1.25rem;
+    }
+
+    ul li:first-child {
+        display: none;
     }
 
     #logo {
@@ -986,6 +988,8 @@ footer a {
 }
 
 @media only screen and (max-width: 450px) {
+
+    
 
     .title {
         top: 100px;
