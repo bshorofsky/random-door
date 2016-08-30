@@ -997,7 +997,8 @@ footer a {
     }
 
     .title h4 {
-        font-size: .75rem;
+        font-size: 1rem;
+        font-weight: 700;
         top:  38vh;
     }
 
